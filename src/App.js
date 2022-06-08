@@ -10,8 +10,10 @@ import SignIn from './pages/SignIn';
 import Offers from './pages/Offers';
 import Profile from './pages/Profile';
 import ForgotPassword from './pages/ForgotPassword';
-import 'react-toastify/dist/ReactToastify.css'
 import Category from './pages/Category';
+import CreateListing from './pages/CreateListing';
+
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
           <Route path='/sign-in' element={<SignIn />} />
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='/forgot-password' element={<ForgotPassword />} />
+          <Route path='/create-listing' element={<CreateListing />} />
         </Routes>
         <Navbar />
       </Router> 
